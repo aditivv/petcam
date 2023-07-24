@@ -7,7 +7,7 @@ import jetson.utils
 # setting up camera and allowing video to save
 net = jetson.inference.detectNet("ssd-mobilenet-v2",threshold=0.5)
 camera = jetson.utils.videoSource("/dev/video0")
-display = jetson.utils.videoOutput("file://where_is_my_pet.mp4")
+display = jetson.utils.videoOutput("file://my_petcam.mp4")
 
 # live camera
 while True:
