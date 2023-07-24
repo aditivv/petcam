@@ -4,4 +4,5 @@ Have you ever left your pet(s) at home for a day, only to spend the whole time w
 # How does it work?
 Petcam uses the Jetson Detectnet network to detect the presence of cats and/or dogs in view of a live camera and then notify the user when a pet is detected.
 
-# How to use Petcam:
+# What you need to use Petcam:
+1. A USB webcam
