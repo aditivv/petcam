@@ -8,4 +8,4 @@ Petcam uses the Jetson Detectnet network to detect the presence of cats and/or d
 1. A USB webcam
 2. Python3 installed
 3. A Jetson nano
-sdkfjsdkfjsdf
+
