@@ -4,13 +4,13 @@
 import jetson.inference
 import jetson.utils
 
-# setting up camera and allowing video to save
+# setting up detectnet and camera as video source
 net = jetson.inference.detectNet("ssd-mobilenet-v2",threshold=0.5)
 camera = jetson.utils.videoSource("/dev/video0")
 display = jetson.utils.videoOutput("file://my_petcam.mp4")
 
 # live camera
-while True:
+while display.IsStreaming():
 	img = camera.Capture()
 	detections = net.Detect(img)
 	display.Render(img)
@@ -18,10 +18,10 @@ while True:
 
 	# get ClassID for every detected object
 	for detection in detections:
-		class_idx = detection.ClassID 
-		class_desc = net.GetClassDesc(class_idx)
-		print(class_desc)
+		class_id = detection.ClassID 
+		class_name = net.GetClassDesc(class_id)
+		print(class_name)
 
 		# if ClassID is a cat or a dog, notify user
-		if class_desc == str("cat") or str("dog"):
+		if class_name == str("cat") or str("dog"):
 			print("Your pet is visible in front of the camera!")
