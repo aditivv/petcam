@@ -1,8 +1,9 @@
-# Why Petcam?
-Have you ever left your pet(s) at home for a day, only to spend the whole time worrying about their safety? Though most people may own security cameras, it can take minutes to actually locate your pet's location, which may be just enough time to miss spotting something that could have been prevented (whether it be a masked intruder taking off with your pet, or your pet simply getting into a bag of cookies you left on the counter). Even motion sensors can be misleading, as other factors could trigger the camera. With Petcam, you will be notified whenever your pet is located in view of the camera, eliminating any confusion and allowing pet owners to leave their pets at home knowing that they can more efficiently ensure their safety.
+# What is Petcam?
+Many people own motion-sensor security cameras that allow them to know whether there are intruders at home or not. When the camera detects motion, people can check to make sure their homes are still safe. However, nowadays, most people with pets simply disregard these notifications, assuming that the motion is their pets running around at home. This is only natural, but also increases the chances of people missing an intruder in their very own home! 
+Petcam is an AI model that determines whether objects in front of the camera are your pets or not. If there is an intruder (or foreign object) in front of your camera, then the camera will notify the user that the object in front of the camera is not your pet.
 
 # How does it work?
-Petcam uses the Jetson Detectnet network to detect the presence of cats and/or dogs in view of a live camera and notify the user when their pet is detected.
+Petcam uses the Jetson Imagenet network to classify whether the object in front of the camera is your pet or a foreign object/intruder.
 
 # What you need to use Petcam:
 1. A USB webcam
