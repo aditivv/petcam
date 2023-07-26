@@ -3,7 +3,7 @@ Many people own motion-sensor security cameras that allow them to know whether t
 Petcam is an AI model that determines whether objects in front of the camera are your pets or not. If there is an intruder (or foreign object) in front of your camera, then the camera will notify the user that the object in front of the camera is not your pet.
 
 # How does it work?
-Petcam uses the Jetson Imagenet network to classify whether the object in front of the camera is your pet or a foreign object/intruder.
+Petcam uses the Jetson Imagenet network to classify whether the object in front of the camera is your pet or not.
 
 # What you need to use Petcam:
 1. A USB webcam
