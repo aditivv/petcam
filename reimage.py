@@ -73,7 +73,7 @@ while True:
 	class_desc = net.GetClassDesc(class_id)
 
 	# overlay the result on the image	
-	if class_desc == "Others":
+	if class_desc == "cat" or "dog":
 		GPIO.output(buz,GPIO.HIGH)
 	else:
 		GPIO.output(buz,GPIO.LOW) 
