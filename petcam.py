@@ -5,9 +5,9 @@ from jetson_inference import detectNet
 from jetson_utils import videoSource, videoOutput
 
 # setting up detectnet and camera as video source
-net = jetson.inference.detectNet("ssd-mobilenet-v2",threshold=0.5)
-camera = jetson.utils.videoSource("/dev/video0")
-display = jetson.utils.videoOutput("file://my_petcam.mp4")
+net = detectNet("ssd-mobilenet-v2",threshold=0.5)
+camera = videoSource("/dev/video0")
+display = videoOutput("file://my_petcam.mp4")
 
 # live camera
 while display.IsStreaming():
