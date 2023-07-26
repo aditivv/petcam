@@ -1,4 +1,4 @@
-Petcam
+## Petcam
 
 This model is used to detect whether there is a person or a pet in front of the camera, which can help when detecting intruders at home as opposed to pets running around the house. It is trained on an imagenet Resnet-18 model using transfer learning. The idea is that if the model overpredicts your age, you might have some sort of skin problems.
 
