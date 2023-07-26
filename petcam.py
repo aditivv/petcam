@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 # importing needed stuff
-import jetson.inference
-import jetson.utils
+from jetson_inference import detectNet
+from jetson_utils import videoSource, videoOutput
 
 # setting up detectnet and camera as video source
 net = jetson.inference.detectNet("ssd-mobilenet-v2",threshold=0.5)
