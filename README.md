@@ -7,7 +7,7 @@ The algorithim is used by reading image or video data and classifying whether it
 
 ## What you need
 1. Jetson Nano
-2. VScode (To view output)
+2. VScode (To view output; you will need to connect to your Nano via VScode)
 
 ## Running this project
 1. Download resnet18.onnx and labels.txt onto your Jetson Nano from this project
