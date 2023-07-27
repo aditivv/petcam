@@ -74,9 +74,9 @@ while True:
 
 	# overlay the result on the image	
 	if class_desc == "intruder":
-		GPIO.output(buz,GPIO.LOW)
+		GPIO.output(buz,GPIO.HIGH)
 	else:
-		GPIO.output(buz,GPIO.HIGH) 
+		GPIO.output(buz,GPIO.LOW) 
 	font.OverlayText(img, img.width, img.height, "{:05.2f}% {:s}".format(confidence * 100, class_desc), 5, 5, font.White, font.Gray40)
 	
 	# render the image
