@@ -1,9 +1,9 @@
 ## PetorNot
 
-This model is used to detect whether security footage from house cameras actually caught any intruders or simply pets running around the house. It does this using the Imagenet classification network to classify whether there is a human (intruder) or pet (cat or dog) in front of the camera. This can be very helpful by allowing users to run through long security footage and detect intruders using the model rather than watching the entire video and possibly skipping through important points in time or zoning out and missing important details.
+This model is used to detect whether security footage from house cameras actually caught any intruders or simply pets running around the house. It does this using the Imagenet classification network to classify whether there is a human (intruder) or pet (cat or dog) in front of the camera. This can be very helpful by allowing users to analyze confusing images from security footage and detect intruders using the model rather than rewatching the entire video and possibly missing important details or making the wrong call. Instead of relying on their limited vision and judgement, humans can instead simply read off the screen whether those present in front of the camera are common household pets or people (intruders).
 
 ## The Algorithm
-The algorithim is used by reading image or video data and classifying whether it contains a dog, cat, or human (intruder)
+The algorithim is used by reading confusing home security camera images and classifying whether they contain a dog, cat, or human (intruder). It uses the Imagenet network to classify the images.
 
 ## What you need
 1. Jetson Nano
