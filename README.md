@@ -1,10 +1,9 @@
 ## Petcam
 
-This model is used to detect whether there is a person or a pet in front of the camera, which can help when detecting intruders at home as opposed to pets running around the house. It is trained on an imagenet Resnet-18 model using transfer learning. The idea is that if the model overpredicts your age, you might have some sort of skin problems.
+This model is used to detect whether there is a person or a pet in front of the camera, which can help when detecting intruders at home as opposed to pets running around the house.
 
 ## The Algorithm
-The algorithim is used by recording a video on a Logitech webcam - supported by Jetson nano. It uses a 2GB Jetson Nano, and so it uses it a preflashed SD card flashed from the NVIDIA webpage. It uses a facenet to find a persons face in the image, then it crops the image to just hold the face. It then sends the face to the transfer learning model. The transfer model then predicts your age. It will try to guess your age to the best of its abilities. Then it will print out the age is it is confident. It is up to the user to interepret the information.
-Note: I ran this model on a realivly low epoch with information that was askew. The pretrained model is quite inacurrate.
+The algorithim is used by recording a video on a Logitech webcam - supported by Jetson nano. It uses a 2GB Jetson Nano, and so it uses it a preflashed SD card flashed from the NVIDIA webpage. It uses imagenet to classify what is in front of the camera, and whether it is an animal or an intruder/person.
 
 ## Running this project
 1. Connect to your Jetson Nano via VSCODE. 
