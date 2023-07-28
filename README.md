@@ -11,7 +11,7 @@ The algorithim is used by reading confusing home security camera images and clas
 
 ## Running this project
 1. Download resnet18.onnx and labels.txt onto your Jetson Nano from this project
-2. Clone the jetson-inference project from GitHub using "git clone --recursive [https://github.com/dusty-nv/jetson-inference](url)" and change directories into it
+2. Clone the jetson-inference project from GitHub using "git clone --recursive [https://github.com/dusty-nv/jetson-inference](url) and change directories into it
 3. Make sure to have python packages installed using "sudo apt-get install libpython3-dev python3-numpy"
 4. Go to jetson-inference/python/training/classification/models and create a new directory for this model using "mkdir petornot". Do the same in jetson-inference/python/training/classification/data.
 5. Copy the downloaded model and text file from (1.) onto jetson-inference/python/training/classification/models/petornot
@@ -21,5 +21,5 @@ The algorithim is used by reading confusing home security camera images and clas
 9. Run the model using "imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/(YOUR DATA FILE) (WHAT YOU WOULD LIKE TO SAVE OUTPUT AS)"
 10. SSN into the jetson-inference folder in VScode to view the new saved file of your classified data (should be under python/training/classification)!
 
-Watch this video for a tutorial on how to complete steps 7-10: [https://youtu.be/rKDq4yzJn78](url)"
+Watch this video for a tutorial on how to complete steps 7-10: [https://youtu.be/rKDq4yzJn78](url)
 
