@@ -21,5 +21,5 @@ The algorithim is used by reading confusing home security camera images and clas
 9. Run the model using "imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/(YOUR DATA FILE) (WHAT YOU WOULD LIKE TO SAVE OUTPUT AS)"
 10. SSN into the jetson-inference folder in VScode to view the new saved file of your classified data (should be under python/training/classification)!
 
-Watch this video for a tutorial on how to complete steps 7-10: [https://youtu.be/rKDq4yzJn78](url)
+Watch this video for a tutorial on how to complete steps 7-10/ a demonstration of the model: [https://youtu.be/rKDq4yzJn78](url)
 
