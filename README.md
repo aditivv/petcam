@@ -23,3 +23,4 @@ The algorithim is used by reading confusing home security camera images and clas
 
 Watch this video for a tutorial on how to complete steps 7-10/ a demonstration of the model: [https://youtu.be/rKDq4yzJn78](url)
 
+
